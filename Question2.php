@@ -1,3 +1,23 @@
+<?php
+$cejour = getdate();
+$strTitre ="<h2>En ce jour {$cejour["mday"]} {$cejour["month"]} {$cejour["year"]}
+sur le serveur {$_SERVER["SERVER_NAME"]},";
+$strTitre .= "il est {$cejour["hours"]}h {$cejour["minutes"]}mn<br>";
+
+$strTable = "<table border ='1'>
+                <tr>
+                    <th>Variable</th>
+                    <th>Valeur</th>
+                </tr>";
+foreach($_SERVER as $item=>$valuer){
+    $strTable .="<tr>
+                    <td>$item</td>
+                    <td>$valuer</td>
+                </tr>";
+}
+$strTable .="</table>";
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,44 +26,13 @@
     <title>Question 2</title>
 </head>
 <body>
-    <pre>
-<?php
-print_r($_SERVER);
-
-echo "<table border='2px'>
-<thead>
-    <tr>
-        <th>Clé</th>
-        <th>Valeur</th>
-    </tr>
-</thead>
-
-<tbody>";
-echo " <tr>
-<td>HTTP_HOST</td>
-<td>{$_SERVER['HTTP_HOST']}</td>
-</tr>";
-echo $_SERVER["HTTP_HOST"];
-
-echo "</tbody>
-</table>";
-
-?>
-
-<table border="2px">
-    <thead>
-        <tr>
-            <th>Col1</th>
-            <th>Col2</th>
-        </tr>
-    </thead>
-
-    <tbody>
-        <tr>
-            <td>Valeur 1</td>
-            <td>Valeur 2</td>
-        </tr>
-    </tbody>
-</table>
+    <?php
+    echo $strTitre;
+    ?>
+    <h3>Variable HTTP serveur (getenv())</h3>
+    <?php
+    echo $strTable;
+    ?>
+   
 </body>
 </html>
