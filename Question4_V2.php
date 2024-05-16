@@ -19,7 +19,7 @@ if (isset($_GET['jeux'])) {
 }
 // Construction de la chaîne de caractères pour les centres d'intérêt
 $interets = implode(', ', $interet);
-
+// La fonction implode() renvoie une chaîne à partir des éléments d'un tableau.
 
 
 
@@ -60,5 +60,9 @@ vous êtes <strong> <?php echo $_GET["maritale"] ?> </strong> et vous vous inté
     echo $interets;
     ?>
 </strong>
+<br><br><br>
+<p>Je m'empresse d'envoyer la requête :</p>
+<p>insert into Matable values(<strong><?php echo $_GET["nom"]?></strong>, <strong><?php echo $_GET["maritale"]?></strong>, <strong><?php echo $interets ?></strong>)</p>
+<p>à notre base de données.</p>
 </body>
 </html>
