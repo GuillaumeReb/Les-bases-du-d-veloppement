@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 4</title>
+</head>
+<body>
+    <h1>Un petit formulaire (pour commencer)</h1>
+    
+    <p>Merci de renseigner les informations suivantes :</p>
+
+    <form action="Question4.php" method="get">
+        <label for="nom">Votre nom :</label>
+        <input type="text" name="nom">
+        <br><br>
+        <label for="age">Votre âge :</label>
+        <input type="number" name="age">
+        <br><br>
+        <label for="maritale">Votre situation maritale :</label>
+        <input type="radio" id="marie" name="maritale" value="marie" checked>
+        <label for="marie">Marié</label>
+        <input type="radio" id="veuf" name="maritale" value="veuf">
+        <label for="veuf">Veuf(ve)</label>
+        <input type="radio" id="celibataire" name="maritale" value="celibataire">
+        <label for="celibataire">Célibataire</label>
+        <br><br>
+        <label for="interet">Vos centres d'intérêt :</label>
+        <input type="checkbox" name="internet" id="internet" checked>
+        <label for="internet">Internet</label>
+        <input type="checkbox" name="informatique" id="informatique">
+        <label for="informatique">Micro-informatique</label>
+        <input type="checkbox" name="jeux" id="jeux">
+        <label for="jeux">Jeux vidéo</label>
+        <br><br>
+        <button type="reset">Recommencer</button>
+        <button type="submit">Envoyer</button>
+
+
+    </form>
+</body>
+</html>
