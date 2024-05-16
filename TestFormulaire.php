@@ -1,3 +1,11 @@
+<?php
+session_start();
+// créer une variable de session
+$_SESSION["nom"] = $_GET["nom"];
+// c'est fini; exécuter loginsuite.php
+header("location:Question3_loginsuite.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +16,7 @@
 <body>
     <h1>Bienvenue sur notre site Web</h1>
 
-    <form action="./Question3_LoginCtrl.php" method="GET">
+    <form action="TestFormulaire.php" method="GET">
         <label for="nom">Entrez votre nom </label>
         <input type="text" id="nom" name="nom"><br>
         <br>

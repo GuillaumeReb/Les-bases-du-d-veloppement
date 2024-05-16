@@ -1,16 +1,9 @@
 <?php
-echo "TEST <br>";
 session_start();
 // créer une variable de session
 $_SESSION["nom"] = $_GET["nom"];
 // c'est fini; exécuter loginsuite.php
 header("location:Question3_loginsuite.php");
-
-
-// print_r($_POST);
-// foreach ($_POST as $cle => $valeur) {
-//     echo "<br/> Clé : $cle a pour valeur : $valeur";
-//  }
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -22,7 +15,7 @@ header("location:Question3_loginsuite.php");
 </head>
 <body>
     <h1>Erreur : Appel de ce script sans passer par le formulaire de Login !!!!</h1>
-    <a href="Exercice03_Login.php">Retour à la page de Login</a>
+    <a href="Question3_LoginCtrl.html">Retour à la page de Login</a>
     
 </body>
 </html>

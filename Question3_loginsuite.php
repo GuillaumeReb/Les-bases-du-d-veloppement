@@ -4,7 +4,7 @@
     if (isset($_SESSION["nom"])) {
         $strContenu = "<h1>Au menu du jour pour vous, {$_SESSION["nom"]}...</h1>";
         $strContenu .= "<ul>
-                            <li><a href='TestFormulaire.php'>Sommaire</a></li>
+                            <li><a href='Question3_LoginCtrl.html'>Sommaire</a></li>
                             <li>Et aussi...</li>
                             <li>Et encore...</li>
                             <li>Et pour finir...</li>
@@ -12,7 +12,7 @@
     } else {
         // On n'est pas passé par le Login !!!
         $strContenu = "<h1>ERREUR login : vous n'avez pas droit d'accès à ce site</h1>";
-        $strContenu .= "<br/><br/><a href='Exercice03_Login.php'>Retour à la page de Login</a>";
+        $strContenu .= "<br/><br/><a href='Question3_LoginCtrl.html'>Retour à la page de Login</a>";
     }
 
 ?>
