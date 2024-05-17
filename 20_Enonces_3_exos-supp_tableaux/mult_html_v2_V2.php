@@ -1,17 +1,57 @@
+<?php
+$titre = "<h1>Une table de multiplication</h1>";
+echo $titre;
+
+$table = "<table>";
+$head = "<thead>
+<tr>
+    <th>1</th>
+    <th>2</th>
+    <th>3</th>
+    <th>4</th>
+    <th>5</th>
+    <th>6</th>
+    <th>7</th>
+    <th>8</th>
+    <th>9</th>
+    <th>10</th>
+</tr>
+</thead>";
+$body = "<tbody>
+for ($i=2; $i <= 10; $i++) { 
+<tr>
+    <td>$i</td>
+    for ($j=2; $j<=10; $j++){
+        <td>.$i*$j.</td>   
+        }    
+        </tr>
+    }
+</tbody>";
+$table .= "</table>";
+
+echo $table;
+echo $head;
+echo $body;
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Petit 1</title>
-    <link rel="stylesheet" href="./styleMultV.CSS">
+    <title>Petit 2</title>
+    <style>
+        /* body{
+            background-color : black;
+        } */
+    </style>
 </head>
 <body>
 
-<h1 class='titre'>Une table de multiplication</h1>
+<h1>Une table de multiplication</h1>
 
-    <table class='tableau'>
-        <thead class='tableau-gris'>
+    <table>
+        <thead>
             <tr>
                 <th>1</th>
                 <th>2</th>
@@ -27,77 +67,77 @@
         </thead>
         <tbody>
             <tr>
-                <td class='tableau-gris'>2</td>
+                <td>2</td>
                 <?php
                 for ($i=2; $i <= 10; $i++) { 
                     $resu = $i*2;
-                    echo "<td class='tableau-noir'>$resu</td> ";
+                    echo "<td>$resu</td> ";
                 }
                 ?>
             </tr>
             <tr>
-                <td class='tableau-gris'>3</td>
+                <td>3</td>
                 <?php
                 for ($i=2; $i <= 10; $i++) { 
                     $resu = $i*3;
-                    echo "<td class='tableau-noir'>$resu</td> ";
+                    echo "<td>$resu</td> ";
                 }
                 ?>
             </tr>
             <tr>
-                <td class='tableau-gris'>4</td>
+                <td>4</td>
                 <?php
                 for ($i=2; $i <= 10; $i++) { 
                     $resu = $i*4;
-                    echo "<td class='tableau-noir'>$resu</td> ";
+                    echo "<td>$resu</td> ";
                 }
                 ?>
             </tr>
             <tr>
-                <td class='tableau-gris'>5</td>
+                <td>5</td>
                 <?php
                 for ($i=2; $i <= 10; $i++) {                     
-                    echo "<td class='tableau-noir'>".($i*5)."</td> ";
+                    echo "<td>".($i*5)."</td> ";
                 }
                 ?>
             </tr>
             <tr>
-                <td class='tableau-gris'>6</td>
+                <td>6</td>
                 <?php
                 for ($i=2; $i <= 10; $i++) {                     
-                    echo "<td class='tableau-noir'>".($i*6)."</td> ";
+                    echo "<td>".($i*6)."</td> ";
                 }
                 ?>
             </tr>
             <tr>
-                <td class='tableau-gris'>7</td>
+                <td>7</td>
                 <?php
                 for ($i=2; $i <= 10; $i++) {                     
-                    echo "<td class='tableau-noir'>".($i*7)."</td> ";
+                    echo "<td>".($i*7)."</td> ";
                 }
                 ?>
             </tr>
             <tr>
-                <td class='tableau-gris'>8</td>
+                <td>8</td>
                 <?php
                 for ($i=2; $i <= 10; $i++) {                     
-                    echo "<td class='tableau-noir'>".($i*8)."</td> ";
+                    echo "<td>".($i*8)."</td> ";
                 }
                 ?>
             </tr>
             <tr>
-                <td class='tableau-gris'>9</td>
+                <td>9</td>
                 <?php
                 for ($i=2; $i <= 10; $i++) {                     
-                    echo "<td class='tableau-noir'>".($i*9)."</td> ";
+                    echo "<td>".($i*9)."</td> ";
                 }
                 ?>
             </tr>
             <tr>
-                <td class='tableau-gris'>10</td>
+                <td>10</td>
                 <?php
                 for ($i=2; $i <= 10; $i++) {                     
-                    echo "<td class='tableau-noir'>".($i*10)."</td> ";
+                    echo "<td>".($i*10)."</td> ";
                 }
                 ?>
             </tr>
