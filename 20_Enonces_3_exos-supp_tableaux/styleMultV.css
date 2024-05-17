@@ -2,12 +2,13 @@ body {
     background-color: black;
     
 }
-.tableau{
+.tableau{   
     margin-left:350px;
-    margin-top:100px;
+    margin-top:30px;
    
 }
 td, th {
+    border : 2px solid rgb(133, 131, 131) ;
     width: 100px;
     text-align: center;
 }
