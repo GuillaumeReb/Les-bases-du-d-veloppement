@@ -13,16 +13,14 @@ function verifier($date, $format = 'd-m-Y H:i:s')
 if (isset($_GET['submit'])) {
     $date = $_GET['date'];
     echo "<br>La date saisi est " .$date."<br>";
-}else{
-    echo "Date incorrecte";
 }
 
 var_dump(verifier($date, 'd/m/Y'));
 
 if (verifier($date, 'd/m/Y') === true) {
-    echo "La date saisi existe";
+    echo "<br>La date saisie existe</br>";
 } else {
-    echo "La date saisi est fausse";
+    echo "<br>La date saisie est fausse</br>";
 }
 
 
@@ -43,7 +41,7 @@ if (verifier($date, 'd/m/Y') === true) {
     </form>
     <br>
     <?php
-    echo "<br>La date saisi est " .($date)."<br>";
+    echo "<br>La date saisie est " .($date)."<br>";
     ?>
 </body>
 </html>
