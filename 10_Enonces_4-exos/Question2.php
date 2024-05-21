@@ -1,4 +1,5 @@
 <?php
+include "../Header.php";
 $cejour = getdate();
 $strTitre ="<h2>En ce jour {$cejour["mday"]} {$cejour["month"]} {$cejour["year"]}
 sur le serveur {$_SERVER["SERVER_NAME"]},";
@@ -33,6 +34,6 @@ $strTable .="</table>";
     <?php
     echo $strTable;
     ?>
-   
+   <br>
 </body>
 </html>

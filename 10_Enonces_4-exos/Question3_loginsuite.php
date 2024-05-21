@@ -1,4 +1,5 @@
 <?php
+include "../Header.php";
     $strContenu = "";
     session_start(); //On va regarder si on a une variable SESSION NOM
     if (isset($_SESSION["nom"])) {

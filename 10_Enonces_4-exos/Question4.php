@@ -1,4 +1,5 @@
 <?php
+include "../Header.php";
 session_start();
 // créer une variable de session
 $_SESSION["nom"] = $_GET["nom"];
