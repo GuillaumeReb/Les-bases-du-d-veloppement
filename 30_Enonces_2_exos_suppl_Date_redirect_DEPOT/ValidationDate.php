@@ -13,18 +13,16 @@ function verifier($date, $format = 'd-m-Y H:i:s')
 
 if (isset($_GET['submit'])) {
     $date = $_GET['date'];
-    echo "<br>La date saisi est " .$date."<br>";
+    echo "<br><h3 class='titre'>La date saisi est le " .$date."</h3><br>";
 }
 
-var_dump(verifier($date, 'd/m/Y'));
+// var_dump(verifier($date, 'd/m/Y'));
 
 if (verifier($date, 'd/m/Y') === true) {
-    echo "<br>La date saisie existe</br>";
+    $mess = "<br><p class='mess'>La date saisie existe</p></br>";
 } else {
-    echo "<br>La date saisie est fausse</br>";
+    $mess = "<br><p class='mess2'>La date saisie est fausse</p></br>";
 }
-
-
 
 ?>
 <!DOCTYPE html>
@@ -33,16 +31,43 @@ if (verifier($date, 'd/m/Y') === true) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VerifDate</title>
+    <style>
+        .titre{
+            text-align:center;
+        }
+        .form{
+            text-align:center;
+        }
+        h4{
+            text-align:center;
+        }
+        .mess{
+            text-align:center;
+            font-size:1.2rem;
+            font-weight: bold;
+            color:green;
+
+        }
+        .mess2{
+            text-align:center;
+            font-size:1.2rem;
+            font-weight: bold;
+            color:red;
+
+        }
+    </style>
 </head>
 <body>
-    <h1>Question</h1>
-    <form action="./ValidationDate.php">
+    <h4>Entrez une date au forma jj/mm/yyyy </h4>
+    <form action="./ValidationDate.php" class="form">
         <input type="text" name="date" placeholder="20/05/2024" >
         <button type="submit" name="submit">Test</button>
     </form>
     <br>
     <?php
-    echo "<br>La date saisie est " .($date)."<br>";
+    // echo "<br>La date saisie est " .($date)."<br>";
+    echo $mess;
     ?>
+
 </body>
 </html>
