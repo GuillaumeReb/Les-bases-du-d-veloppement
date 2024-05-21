@@ -6,11 +6,13 @@ include "./Header.php";
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="accueil.css">
     <title>Accueil</title>
 </head>
 <body>
-    <h1>Page d'Accueil</h1>
+    <br>
+    <h1><span>Je découvre le langage PHP</span></h1>
 
-    <p>TEST</p>
+    <img src="./images/PHP.png" alt="" class="ele">
 </body>
 </html>

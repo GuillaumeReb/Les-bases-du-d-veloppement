@@ -94,7 +94,4 @@ echo "<br/>";
     ////////////////
     echo "<br/><br/>Point 12</br>";
     var_dump($pays);
-
-
-
 ?>

@@ -45,6 +45,7 @@ echo "</tbody> </table>";
            
         }
         td, th {
+            border : 2px solid rgb(133, 131, 131) ;
             width: 100px;
             text-align: center;
         }
