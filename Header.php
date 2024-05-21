@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <title>header</title>
+    <title>Découvre PHP</title>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
@@ -47,7 +47,7 @@
           </a>
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="../30_Enonces_2_exos_suppl_Date_redirect_DEPOT/ValidationDate.php">Validation date</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="../30_Enonces_2_exos_suppl_Date_redirect_DEPOT/form1.php">Form 1</a></li>
             <li><a class="dropdown-item" href="#">Something else here</a></li>
           </ul>
         </li>
