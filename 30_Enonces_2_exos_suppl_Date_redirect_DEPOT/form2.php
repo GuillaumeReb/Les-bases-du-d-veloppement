@@ -25,23 +25,16 @@ if (isset($_POST["logout"])) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form2.css">
     <title>Form 2</title>
 </head>
 <body>
-    <h1>Bienvenu</h1>
-    <!-- Lien pour se déconnecter -->
-    <form action="" method="post">
-        <input type="submit" value="Déconnexion" name="logout">
-    </form>
-    <br>
-    <br>
-    <!-- a effacer apres débugg -->
-    <?php if (isset($email)): ?>
-        <h1>Bienvenue, <?php echo htmlspecialchars($email); ?>!</h1>
-    <?php endif; ?>
-    <!-- Lien pour se déconnecter -->
-    <form action="" method="post">
-        <input type="submit" value="Déconnexion" name="logout">
-    </form>
+<div class="container">
+        <h1 class="titre">Bienvenue</h1>
+        <p class="message">Bonjour, <?php echo htmlspecialchars($email); ?> ! Vous êtes connecté.</p>
+        <form action="" method="post" class="form">
+            <input type="submit" value="Déconnexion" name="logout" class="logout-btn">
+        </form>
+    </div>
 </body>
 </html>
