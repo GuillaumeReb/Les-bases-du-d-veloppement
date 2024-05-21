@@ -1,4 +1,5 @@
 <?php
+session_start(); // Démarrer la session
 include "../Header.php";
 $msg = "";
 $erreur = false;
@@ -12,9 +13,7 @@ if (isset($_POST["btn"])){
 
     } elseif (empty($_POST["pwd"])) {
     $msg = "Merci de remplir le mot de passe";
-    $erreur = true;
-
-    
+    $erreur = true;    
 
     }else{
         $utilisateurs = [
@@ -24,11 +23,11 @@ if (isset($_POST["btn"])){
          ];
 
     $email = $_POST["mail"];
-    $passeword = $_POST["pwd"];
+    $password = $_POST["pwd"];
     $valide = false;
 
     foreach ($utilisateurs as $utilisateur) {
-        if ($utilisateur["email"] === $email && $utilisateur["password"] === $passeword) {
+        if ($utilisateur["email"] === $email && $utilisateur["password"] === $password) {
             $valide = true;
             break;
         }
@@ -36,20 +35,19 @@ if (isset($_POST["btn"])){
 
         if ($valide) {
         // Rediriger en cas de succès
-        header('Location:https://www.reverso.net/orthographe/correcteur-francais/');
-        exit(); // Assurez-vous de terminer le script après redirection
+        header("location:form2.php");
+        // exit(); // Assurez-vous de terminer le script après redirection
+        $msg = "VALIDE";
         } else {
         $msg = "Email ou mot de passe incorrect";
         $erreur = true;
         }
     }
-} else {
-$msg = "Saisie obligatoire"; // Message initial
-$erreur = true;
+    } else {
+    $msg = "Saisie obligatoire"; // Message initial
+    $erreur = true;
 }
-
-
-   
+  
 ?>
 <!DOCTYPE html>
 <html lang="en">
