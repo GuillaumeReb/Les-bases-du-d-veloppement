@@ -1,4 +1,5 @@
 <?php
+include "../Header.php";
 $titre = "<h1 class='titre'>Une table de multiplication</h1>";
 echo $titre;
 

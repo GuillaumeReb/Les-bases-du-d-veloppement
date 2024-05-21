@@ -1,3 +1,6 @@
+<?php
+include "../Header.php";
+?>
 <pre>
 <?php
     $tab = array("php7@free.fr","sacha@gmail.com",

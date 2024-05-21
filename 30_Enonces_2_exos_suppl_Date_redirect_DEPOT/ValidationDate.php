@@ -1,4 +1,5 @@
 <?php
+include "../Header.php";
 function verifier($date, $format = 'd-m-Y H:i:s')
 {   
     $date = $_GET['date'];

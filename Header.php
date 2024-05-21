@@ -32,20 +32,21 @@
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown link 2
+            20_Enonces_3_exos-supp_tableau
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
+            <li><a class="dropdown-item" href="../20_Enonces_3_exos-supp_tableaux/mult_html_v1.php">mult_V1</a></li>
+            <li><a class="dropdown-item" href="../20_Enonces_3_exos-supp_tableaux/mult_html_v2.php">mult_V2</a></li>
+            <li><a class="dropdown-item" href="../20_Enonces_3_exos-supp_tableaux/02Tableau.php">Tableau</a></li>
+            <li><a class="dropdown-item" href="../20_Enonces_3_exos-supp_tableaux/03Fournisseur.php">Fournisseur</a></li>
           </ul>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown link 3
+          30_Enonces_2_exos_suppl_Date_redirect_DEPOT
           </a>
           <ul class="dropdown-menu">
-            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="../30_Enonces_2_exos_suppl_Date_redirect_DEPOT/ValidationDate.php">Validation date</a></li>
             <li><a class="dropdown-item" href="#">Another action</a></li>
             <li><a class="dropdown-item" href="#">Something else here</a></li>
           </ul>
