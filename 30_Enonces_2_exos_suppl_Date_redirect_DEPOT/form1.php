@@ -29,15 +29,17 @@ if (isset($_POST["btn"])){
     foreach ($utilisateurs as $utilisateur) {
         if ($utilisateur["email"] === $email && $utilisateur["password"] === $password) {
             $valide = true;
+            $_SESSION["email"] = $email; // Stocker l'email dans la session
             break;
         }
     }
 
         if ($valide) {
+            // $msg = "Connexion réussie! Redirection vers form2.php.";
         // Rediriger en cas de succès
         header("location:form2.php");
-        // exit(); // Assurez-vous de terminer le script après redirection
-        $msg = "VALIDE";
+        exit(); // Assurez-vous de terminer le script après redirection
+        
         } else {
         $msg = "Email ou mot de passe incorrect";
         $erreur = true;
