@@ -12,6 +12,7 @@ if(isset($_COOKIE['mail'])) {
 } else {
     echo "ERREUR";
     // Gérer le cas où le cookie n'existe pas, par exemple, afficher un message ou rediriger l'utilisateur
+    header('Location: ./form1Cookies.php'); // Rediriger vers la page de connexion
 }
 
 
