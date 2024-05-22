@@ -10,7 +10,8 @@ include "../Header.php";
     <link rel="stylesheet" href="./styleMultV.CSS">
 </head>
 <body>
-
+<br>
+<br>
 <h1 class='titre'>Une table de multiplication</h1>
 
     <table class='tableau'>

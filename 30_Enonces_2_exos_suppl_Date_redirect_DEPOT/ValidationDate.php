@@ -1,5 +1,7 @@
 <?php
 include "../Header.php";
+$date="";
+$mesg1="";
 function verifier($date, $format = 'd-m-Y H:i:s')
 {   
     // $date = $_GET['date'];
@@ -17,7 +19,6 @@ if (isset($_GET['submit'])) {
     }
 
 // var_dump(verifier($date, 'd/m/Y'));
-
 
 if (verifier($date, 'd/m/Y') === true) {
     $mess = "<br><p class='mess'>La date saisie existe</p><br>";

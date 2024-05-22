@@ -1,6 +1,6 @@
 <?php
 include "../Header.php";
-$titre = "<h1 class='titre'>Une table de multiplication</h1>";
+$titre = "<br><br><h1 class='titre'>Une table de multiplication</h1>";
 echo $titre;
 
 echo "<table class='tableau'>

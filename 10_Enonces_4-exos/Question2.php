@@ -32,6 +32,8 @@ $strTable .="</table>";
     </style>
 </head>
 <body>
+    
+    <br>
     <?php
     echo $strTitre;
     ?>
