@@ -29,7 +29,8 @@ if (isset($_POST["btn"])){
     foreach ($utilisateurs as $utilisateur) {
         if ($utilisateur["email"] === $email && $utilisateur["password"] === $password) {
             $valide = true;
-            $_SESSION["email"] = $email; // Stocker l'email dans la session
+            // $_SESSION["email"] = $email; // Stocker l'email dans la session
+            setcookie("mail", $email, time() + 3600); //Cookie expire dans 1 heure
             break;
         }
     }
@@ -62,12 +63,12 @@ if (isset($_POST["btn"])){
 <body>
     <div class="container">
    
-<h1 class="titre">Page de connection Cookies</h1>
+<h1 class="titre"><strong>Page de connection Cookies</strong></h1>
 <form action="form1Cookies.php" method="POST" class="form">
-    <label for="txtnom">Entrez votre email </label>
+    <label for="txtnom"><strong>Entrez votre email</strong> </label>
     <input type="mail" id="txtmail" name="mail" class="input"><br>
   
-    <label for="txtpwd">Entrez votre mot de passe</label>
+    <label for="txtpwd"><strong>Entrez votre mot de passe</strong></label>
     <input type="password" id="txtpwd" name="pwd" class="input"><br>
     
     <input type="submit" value="Envoyer" name="btn" class="submit">
