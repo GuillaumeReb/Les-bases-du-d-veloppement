@@ -35,10 +35,10 @@ if (isset($_POST["btn"])){
     }
 
         if ($valide) {
-            // $msg = "Connexion réussie! Redirection vers form2.php.";
+        // $msg = "Connexion réussie! Redirection vers form2.php.";
         // Rediriger en cas de succès
         header("location:form2.php");
-        exit(); // Assurez-vous de terminer le script après redirection
+        exit(); //Terminer le script après redirection
         
         } else {
         $msg = "Email ou mot de passe incorrect";
