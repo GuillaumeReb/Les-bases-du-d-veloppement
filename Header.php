@@ -48,6 +48,7 @@
           <ul class="dropdown-menu">
             <li><a class="dropdown-item" href="../30_Enonces_2_exos_suppl_Date_redirect_DEPOT/ValidationDate.php">Validation date</a></li>
             <li><a class="dropdown-item" href="../30_Enonces_2_exos_suppl_Date_redirect_DEPOT/form1.php">Formulaire de connection</a></li>
+            <li><a class="dropdown-item" href="../30_Enonces_2_exos_suppl_Date_redirect_DEPOT/form1Cookies.php">Formulaire de connection Cookies</a></li>
             <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
           </ul>
         </li>
